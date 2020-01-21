@@ -20,11 +20,10 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Les Projets</a>
+                        <a class="nav-link" href="{{ path('project_index') }}">Les Projets</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="{{ path('category') }}" id="download">Catégories
-                            <span class="caret"></span></a>
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="{{ path('category') }}" id="download">Catégories <span class="caret"></span></a>
                         <div class="dropdown-menu" aria-labelledby="download">
                             <a class="dropdown-item" href="{{ path('category') }}">Sport</a>
                             <a class="dropdown-item" href="{{ path('category') }}">Musique</a>
@@ -33,7 +32,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ path('user_index') }}">
+                        <a class="nav-link" href="{{path('user_index')}}">
                             <i class="fa fa-sign-in"></i>
                             Me connecter
                         </a>
